@@ -1,15 +1,13 @@
 import java.util.Scanner;
 
 public class KamusDictionary {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        boolean yes = true;
         int pilihan;
 
         String[] kata = new String[10];
         int cek = 0;
-        int bantuan = -1;
         do {
             System.out.println(".:MENU:.");
             System.out.println("1. Input Kata");
@@ -52,8 +50,7 @@ public class KamusDictionary {
                 cek++;
 
 
-            }
-            if (pilihan == 2) {
+            } else if (pilihan == 2) {
                 scanner.nextLine();
 
 
@@ -79,97 +76,109 @@ public class KamusDictionary {
                     }
 
                 }
+            }
+            if (pilihan == 3) {
+                scanner.nextLine();
+                System.out.println("Masukan kata yang mau dihapus ");
+                String inputHapus = scanner.nextLine();
 
-                if (pilihan == 3) {
-                    scanner.nextLine();
-                    System.out.println("Masukan kata yang mau dihapus ");
-                    String inputHapus = scanner.nextLine();
+                if (inputHapus.equalsIgnoreCase(kata[0])) {
+                    kata[0] = kata[1];
+                    kata[1] = kata[2];
+                    kata[2] = kata[3];
+                    kata[3] = kata[4];
+                    kata[4] = kata[5];
+                    kata[5] = kata[6];
+                    kata[6] = kata[7];
+                    kata[7] = kata[8];
+                    kata[8] = kata[9];
+                    kata[9] = null;
+                } else if (inputHapus.equalsIgnoreCase(kata[1])) {
+                    kata[1] = kata[2];
+                    kata[2] = kata[3];
+                    kata[3] = kata[4];
+                    kata[4] = kata[5];
+                    kata[5] = kata[6];
+                    kata[6] = kata[7];
+                    kata[7] = kata[8];
+                    kata[8] = kata[9];
+                    kata[9] = null;
+                } else if (inputHapus.equalsIgnoreCase(kata[2])) {
 
-                    if (inputHapus.equalsIgnoreCase(kata[0])) {
-                        kata[0] = kata[1];
-                        kata[1] = kata[2];
-                        kata[2] = kata[3];
-                        kata[3] = kata[4];
-                        kata[4] = kata[5];
-                        kata[5] = kata[6];
-                        kata[6] = kata[7];
-                        kata[7] = kata[8];
-                        kata[8] = kata[9];
-                        kata[9] = null;
-                    } else if (inputHapus.equalsIgnoreCase(kata[1])) {
-                        kata[1] = kata[2];
-                        kata[2] = kata[3];
-                        kata[3] = kata[4];
-                        kata[4] = kata[5];
-                        kata[5] = kata[6];
-                        kata[6] = kata[7];
-                        kata[7] = kata[8];
-                        kata[8] = kata[9];
-                        kata[9] = null;
-                    } else if (inputHapus.equalsIgnoreCase(kata[2])) {
+                    kata[2] = kata[3];
+                    kata[3] = kata[4];
+                    kata[4] = kata[5];
+                    kata[5] = kata[6];
+                    kata[6] = kata[7];
+                    kata[7] = kata[8];
+                    kata[8] = kata[9];
+                    kata[9] = null;
+                } else if (inputHapus.equalsIgnoreCase(kata[3])) {
+                    kata[3] = kata[4];
+                    kata[4] = kata[5];
+                    kata[5] = kata[6];
+                    kata[6] = kata[7];
+                    kata[7] = kata[8];
+                    kata[8] = kata[9];
+                    kata[9] = null;
+                } else if (inputHapus.equalsIgnoreCase(kata[4])) {
+                    kata[4] = kata[5];
+                    kata[5] = kata[6];
+                    kata[6] = kata[7];
+                    kata[7] = kata[8];
+                    kata[8] = kata[9];
+                    kata[9] = null;
+                } else if (inputHapus.equalsIgnoreCase(kata[5])) {
 
-                        kata[2] = kata[3];
-                        kata[3] = kata[4];
-                        kata[4] = kata[5];
-                        kata[5] = kata[6];
-                        kata[6] = kata[7];
-                        kata[7] = kata[8];
-                        kata[8] = kata[9];
-                        kata[9] = null;
-                    } else if (inputHapus.equalsIgnoreCase(kata[3])) {
-                        kata[3] = kata[4];
-                        kata[4] = kata[5];
-                        kata[5] = kata[6];
-                        kata[6] = kata[7];
-                        kata[7] = kata[8];
-                        kata[8] = kata[9];
-                        kata[9] = null;
-                    } else if (inputHapus.equalsIgnoreCase(kata[4])) {
-                        kata[4] = kata[5];
-                        kata[5] = kata[6];
-                        kata[6] = kata[7];
-                        kata[7] = kata[8];
-                        kata[8] = kata[9];
-                        kata[9] = null;
-                    } else if (inputHapus.equalsIgnoreCase(kata[5])) {
+                    kata[5] = kata[6];
+                    kata[6] = kata[7];
+                    kata[7] = kata[8];
+                    kata[8] = kata[9];
+                    kata[9] = null;
+                } else if (inputHapus.equalsIgnoreCase(kata[6])) {
+                    kata[6] = kata[7];
+                    kata[7] = kata[8];
+                    kata[8] = kata[9];
+                    kata[9] = null;
+                } else if (inputHapus.equalsIgnoreCase(kata[7])) {
 
-                        kata[5] = kata[6];
-                        kata[6] = kata[7];
-                        kata[7] = kata[8];
-                        kata[8] = kata[9];
-                        kata[9] = null;
-                    } else if (inputHapus.equalsIgnoreCase(kata[6])) {
-                        kata[6] = kata[7];
-                        kata[7] = kata[8];
-                        kata[8] = kata[9];
-                        kata[9] = null;
-                    } else if (inputHapus.equalsIgnoreCase(kata[7])) {
-
-                        kata[7] = kata[8];
-                        kata[8] = kata[9];
-                        kata[9] = null;
-                    } else if (inputHapus.equalsIgnoreCase(kata[8])) {
-
-
-                        kata[8] = kata[9];
-                        kata[9] = null;
-                    } else if (inputHapus.equalsIgnoreCase(kata[9])) {
-
-                        kata[9] = null;
-                    } else {
-                        System.out.println("kata tidak ada");
-                    }
+                    kata[7] = kata[8];
+                    kata[8] = kata[9];
+                    kata[9] = null;
+                } else if (inputHapus.equalsIgnoreCase(kata[8])) {
 
 
+                    kata[8] = kata[9];
+                    kata[9] = null;
+                } else if (inputHapus.equalsIgnoreCase(kata[9])) {
+
+                    kata[9] = null;
+                } else {
+                    System.out.println("kata tidak ada");
                 }
 
-                if (pilihan == 4) {
-                    yes = false;
-                }
 
             }
 
+            if (pilihan == 4) {
+                break;
+            }
 
-        } while (yes != false);
+
+        } while (true);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
